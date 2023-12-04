@@ -1,0 +1,12 @@
+@import "../../../../build/scss/src/variables";
+
+.subtitle {
+  font-family: $font-family-highlight;
+  font-weight: $font-weight-medium;
+  color: $neutral-color-4;
+
+  &--small {
+    font-size: $font-size-md;
+    line-height: $line-height-medium;
+  }
+}

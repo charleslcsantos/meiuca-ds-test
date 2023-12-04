@@ -1,0 +1,12 @@
+@import "../../../../build/scss/src/variables";
+
+.paragraph {
+  font-family: $font-family-highlight;
+  font-weight: $font-weight-regular;
+  color: $neutral-color-4;
+
+  &--small {
+    font-size: $font-size-xs;
+    line-height: $line-height-distant;
+  }
+}

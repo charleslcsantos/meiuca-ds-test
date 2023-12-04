@@ -1,0 +1,11 @@
+@import "../../../../build/scss/src/variables";
+
+.shape {
+  border-radius: $radius-size-none;
+  padding: 40px;
+  border-width: $border-size-thin;
+
+  border-color: $neutral-color-2;
+  background-color: $neutral-color-1;
+  border-style: solid;
+}

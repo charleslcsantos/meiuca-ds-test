@@ -1,10 +1,10 @@
 import "./App.css";
-import Button from "./shared/core/button/Button";
+import CardContent from "./components/card-content/CardContent";
 
 function App() {
   return (
     <>
-      <Button label="Primary Button" />
+      <CardContent></CardContent>
     </>
   );
 }
