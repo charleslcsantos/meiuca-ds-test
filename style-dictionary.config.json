@@ -3,6 +3,7 @@
   "platforms": {
     "scss": {
       "transformGroup": "scss",
+      "transforms": ["name/cti/kebab", "size/px", "color/css"],
       "prefix": "",
       "buildPath": "build/scss/",
       "files": [
