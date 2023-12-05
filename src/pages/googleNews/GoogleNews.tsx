@@ -23,6 +23,7 @@ export default function GoogleNews() {
             {articles.map((article) => {
               return (
                 <CardContent
+                  ariaLabel={"Ler mais sobre: " + article.title!}
                   heading={article.author}
                   subtitle={new Date(article.publishedAt).toLocaleDateString()}
                   paragraph={article.title!}

@@ -26,7 +26,7 @@ export default function CardContent({
         <Heading tabIndex={1}>{heading}</Heading>
         <Subtitle tabIndex={1}>{subtitle}</Subtitle>
         <Paragraph tabIndex={1}>{paragraph}</Paragraph>
-        <Button>{buttonLabel}</Button>
+        <Button ariaLabel="Ler notícia">{buttonLabel}</Button>
       </Shape>
     </div>
   );
