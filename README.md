@@ -26,6 +26,22 @@ npm run dev
 
 Abaixo segue alguns tópicos relacionados ao raciocínio e decisões utilizados durante o processo de desenvolvimento.
 
+# Decisôes:
+
+- O ideal é que um DS seja um projeto separado e considerado uma lib de UI/UX. Por exemplo hospedar ele como um pacote no npm e importar ele nos projetos que você ou o time deseja. Neste desafio eu tomei a decisão de fazer a página de News dentro do repositório do DS. Como disse acima o ideal é ser um outro projeto em um outro repositório e assim importar o DS como uma dependencia do projeto.
+- Eu decidi utilizar o react, apesar do meu domínio em angular tambem. Em situações que o DS precisa ser agnóstico a framework é possível cosntruir-lo utilizando o StencilJS (https://stenciljs.com/)
+- Utilizei o typescript para melhorar a organização, confiabilidade e manutenção dos projetos em JS. 
+- Decidi alterar a variavel de cor que está sendo indicada no figma para ficar visualmente semelhante ao botao também exibido no figma
+  (de $brand-color-primary-2 para ...primary-5)
+- Para o Heading e Subtitle levei em consideração que pode existir mais de um tamanho, por conta disso adicionei a prop `size`. Porém como no figma só tem o tamanho small, considerei ele como default e não criei mais nenhuma variação.
+- A mesma lógica foi aplicada no componente button. Já que comumente se utiliza algumas variações como primary, secondary e etc.
+- Algumas variáveis no figma estão desatualizadas com o json enviado, por conta disso tomei a decisão de escolher outras variáveis que faziam sentido de acordo com o layout no figma (exemplo: padding do shape 40px, cor da borda do shape $neutral-color-2)
+- No componente `<Heading>` optei por usar a tag `<H2>` já que é usado o card é renderizado várias vezes. Em uma página é boa prática ter apenas um `<H1>` (Referencia: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements#avoid_using_multiple_h1_elements_on_one_page).
+- O React está rodando em strict mode. Por conta disso, no ambiente de dev, ele acaba gerando uma duplicação das chamadas de API (https://beta-reactjs-org-git-effects-fbopensource.vercel.app/learn/synchronizing-with-effects#fetching-data).
+- O componente `<Button>` poderia ter a possibilidade de ser uma tag `<a> ou <Link>` (em casos de SEO é importante manter a semântica) mas optei por manter a lógica do component simples considerando uso dentro de um SPA
+
+---
+
 # Raciocínio:
 
 - Analisar o problema proposto no teste.
@@ -39,22 +55,7 @@ Abaixo segue alguns tópicos relacionados ao raciocínio e decisões utilizados 
 - Desenvolver os componentes
 - Desenvolver página consumindo API do Google e renderizando as notícias utilizando componente `<CardContent>`
 
----
-
-# Decisôes:
-
-- O ideal é que um DS seja um projeto separado e considerado uma lib de UI/UX. Por exemplo hospedar ele como um pacote no npm e importar ele nos projetos que você ou o time deseja. Neste desafio eu tomei a decisão de fazer a página de News dentro do repositório do DS. Como disse acima o ideal é ser um outro projeto em um outro repositório e assim importar o DS como uma dependencia do projeto.
-- Decidi alterar a variavel de cor que está sendo indicada no figma para ficar visualmente semelhante ao botao também exibido no figma
-  (de $brand-color-primary-2 para ...primary-5)
-- Para o Heading e Subtitle levei em consideração que pode existir mais de um tamanho, por conta disso adicionei a prop `size`. Porém como no figma só tem o tamanho small, considerei ele como default e não criei mais nenhuma variação.
-- A mesma lógica foi aplicada no componente button. Já que comumente se utiliza algumas variações como primary, secondary e etc.
-- Algumas variáveis no figma estão desatualizadas com o json enviado, por conta disso tomei a decisão de escolher outras variáveis que faziam sentido de acordo com o layout no figma (exemplo: padding do shape 40px, cor da borda do shape $neutral-color-2)
-- No componente `<Heading>` optei por usar a tag `<H2>` já que é usado o card é renderizado várias vezes. Em uma página é boa prática ter apenas um `<H1>` (Referencia: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements#avoid_using_multiple_h1_elements_on_one_page).
-- O React está rodando em strict mode. Por conta disso, no ambiente de dev, ele acaba gerando uma duplicação das chamadas de API (https://beta-reactjs-org-git-effects-fbopensource.vercel.app/learn/synchronizing-with-effects#fetching-data).
-- O componente `<Button>` poderia ter a possibilidade de ser uma tag `<a> ou <Link>` (em casos de SEO é importante manter a semântica) mas optei por manter a lógica do component simples considerando uso dentro de um SPA
-
----
-
+--- 
 # Otimizar manutenção e qualidade
 
 Alguns pontos que considero importante:
