@@ -19,8 +19,8 @@
 - Para o Heading e Subtitle levei em consideração que pode existir mais de um tamanho, por conta disso adicionei a prop `size`. Porém como no figma só tem o tamanho small, considerei ele como default e não criei mais nenhuma variação.
 - A mesma lógica foi aplicada no componente button. Já que comumente se utiliza algumas variações como primary, secondary e etc.
 - Algumas variáveis no figma estão desatualizadas com o json enviado, por conta disso tomei a decisão de escolher outras variáveis que faziam sentido de acordo com o layout no figma (exemplo: padding do shape 40px, cor da borda do shape $neutral-color-2)
-- No componente `<Heading>` optei por usar a tag <H2> já que é usado o card é renderizado várias vezes. Em uma página é boa prática ter apenas um <H1>. (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements#avoid_using_multiple_h1_elements_on_one_page)
-- O React está rodando em strict mode. Por conta disso, no ambiente de dev, ele acaba gerando uma duplicação das chamadas de API (https://beta-reactjs-org-git-effects-fbopensource.vercel.app/learn/synchronizing-with-effects#fetching-data)
+- No componente `<Heading>` optei por usar a tag `<H2>` já que é usado o card é renderizado várias vezes. Em uma página é boa prática ter apenas um `<H1>` (Referencia: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements#avoid_using_multiple_h1_elements_on_one_page).
+- O React está rodando em strict mode. Por conta disso, no ambiente de dev, ele acaba gerando uma duplicação das chamadas de API (https://beta-reactjs-org-git-effects-fbopensource.vercel.app/learn/synchronizing-with-effects#fetching-data).
 - O componente `<Button>` poderia ter a possibilidade de ser uma tag `<a> ou <Link>` (em casos de SEO é importante manter a semântica) mas optei por manter a lógica do component simples considerando uso dentro de um SPA
 
 ---
@@ -29,7 +29,7 @@
 
 Alguns pontos que considero importante:
 
-- Ao analisar os requisitos e materiais do teste já é possível obter uma boa condição para otimizar e manter o DS. Utilizar ferramentas como Figma, Style Dictionary e Storybook ajuda a manter as equipes envolvidas alinhada com relação a definições.
+- Ao analisar os requisitos e materiais do teste já é possível obter uma boa condição para otimizar e manter o DS. Utilizar ferramentas como Figma, Style Dictionary e Storybook ajuda a manter as equipes envolvidas alinhadas com relação a definições.
 - Falando em definições, apesar de usar as ferramentas acima, é importante que manter os tokens e toda documentação atualizada. Isso pode evitar eventuais inconsistencias entre os projetos e as definições de design da empresa.
 - É importante manter uma boa comunicação entre o DS e os outros times. Sempre que possível colher feedbacks dos devs que estão utilizando o DS. Outra dica importante é acompanhar o uso do DS e colher métricas para tomar decisões mais acertivas.
 - Outras ferramentas importantes é utilizar ESLint e Prettier para apoiar no dia a dia da manutenção e criação de novos componentes. Ajudando assim a manter a padronização do código.
