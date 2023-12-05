@@ -30,17 +30,17 @@ Abaixo segue alguns tópicos relacionados ao raciocínio e decisões utilizados 
 
 # Decisões:
 
-- O ideal é que um DS seja um projeto separado e considerado uma lib de UI/UX. Por exemplo hospedar ele como um pacote no npm e importar ele nos projetos que você ou o time deseja. Neste desafio eu tomei a decisão de fazer a página de News dentro do repositório do DS. Como disse acima o ideal é ser um outro projeto em um outro repositório e assim importar o DS como uma dependencia do projeto.
-- Eu decidi utilizar o react, apesar do meu domínio em angular tambem. Em situações que o DS precisa ser agnóstico a framework é possível cosntruir-lo utilizando o StencilJS (https://stenciljs.com/)
+- O ideal é que um DS seja um projeto separado e considerado uma lib de UI/UX. Por exemplo publicar ele como um pacote no npm para que seja possível importar ele nos projetos que você ou o time deseja. Neste desafio eu tomei a decisão de fazer a página de News dentro do repositório do DS. Como disse acima o ideal é ter dois projetos separados, cada um em um repositório e assim importar o DS como uma dependencia do projeto.
+- Eu decidi utilizar o react, apesar de possuir domínio em Angular, decidi usar o react para ajudar a reforçar alguns aprendizados que obtive nesses ultimos meses. Existem algumas situações que o DS precisa ser agnóstico a framework. Isso é possível utilizando o StencilJS (https://stenciljs.com/). Com o StencilJS você desenvolve o DS e consegue exportar como web components e assim utilizar em qualquer um dos frameworks/libs web que você e sua equipe trabalham.
 - Utilizei o typescript para melhorar a organização, confiabilidade e manutenção dos projetos em JS.
 - Decidi alterar a variavel de cor que está sendo indicada no figma para ficar visualmente semelhante ao botao também exibido no figma
   (de $brand-color-primary-2 para ...primary-5)
 - Para o Heading e Subtitle levei em consideração que pode existir mais de um tamanho, por conta disso adicionei a prop `size`. Porém como no figma só tem o tamanho small, considerei ele como default e não criei mais nenhuma variação.
 - A mesma lógica foi aplicada no componente button. Já que comumente se utiliza algumas variações como primary, secondary e etc.
 - Algumas variáveis no figma estão desatualizadas com o json enviado, por conta disso tomei a decisão de escolher outras variáveis que faziam sentido de acordo com o layout no figma (exemplo: padding do shape 40px, cor da borda do shape $neutral-color-2)
-- No componente `<Heading>` optei por usar a tag `<H2>` já que é usado o card é renderizado várias vezes. Em uma página é boa prática ter apenas um `<H1>` (Referencia: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements#avoid_using_multiple_h1_elements_on_one_page).
-- O React está rodando em strict mode. Por conta disso, no ambiente de dev, ele acaba gerando uma duplicação das chamadas de API (https://beta-reactjs-org-git-effects-fbopensource.vercel.app/learn/synchronizing-with-effects#fetching-data).
-- O componente `<Button>` poderia ter a possibilidade de ser uma tag `<a> ou <Link>` (em casos de SEO é importante manter a semântica) mas optei por manter a lógica do component simples considerando uso dentro de um SPA
+- No componente `<Heading>` optei por usar a tag `<H2>` já que o card pode ser utilizado e renderizado várias vezes na mesma página. Em uma página é boa prática ter apenas um `<H1>` (Referencia: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements#avoid_using_multiple_h1_elements_on_one_page).
+- O React está rodando em strict mode. Por conta disso, no ambiente de dev, ele acaba gerando uma duplicação das chamadas de API (https://beta-reactjs-org-git-effects-fbopensource.vercel.app/learn/synchronizing-with-effects#fetching-data). Não se assuste ao visualizar requests duplicados. :)
+- O componente `<Button>` poderia ter a possibilidade de ser uma tag `<button> ou <Link>` (em casos de SEO é importante manter a semântica e também para evitar que o usuário ao clicar em um link carregue todo o site novamente) mas optei por manter a lógica do component simples considerando uso dentro de um site simples
 
 ---
 
