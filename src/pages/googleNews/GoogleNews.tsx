@@ -27,6 +27,7 @@ export default function GoogleNews() {
                   heading={article.author}
                   subtitle={new Date(article.publishedAt).toLocaleDateString()}
                   paragraph={article.title!}
+                  redirectTo={article.url}
                   buttonLabel="Ler mais"
                 ></CardContent>
               );

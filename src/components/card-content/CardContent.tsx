@@ -11,6 +11,7 @@ type Props = {
   subtitle: string;
   paragraph: string;
   buttonLabel: string;
+  redirectTo: string;
 };
 
 export default function CardContent({
@@ -19,6 +20,7 @@ export default function CardContent({
   subtitle,
   paragraph,
   buttonLabel,
+  redirectTo,
 }: Props) {
   return (
     <div className={`card-content`} aria-label={ariaLabel}>
@@ -26,7 +28,9 @@ export default function CardContent({
         <Heading tabIndex={1}>{heading}</Heading>
         <Subtitle tabIndex={1}>{subtitle}</Subtitle>
         <Paragraph tabIndex={1}>{paragraph}</Paragraph>
-        <Button ariaLabel="Ler notícia">{buttonLabel}</Button>
+        <Button href={redirectTo} target="_blank" ariaLabel={buttonLabel}>
+          {buttonLabel}
+        </Button>
       </Shape>
     </div>
   );
