@@ -50,7 +50,7 @@ Abaixo segue alguns tópicos relacionados ao raciocínio e decisões utilizados 
 - Pesquisar materiais da Meiuca falando sobre DS e analisar a perspectiva de construção e concepção de DS deles (exemplo de referencia: https://medium.com/meiuca/1-design-system-na-vis%C3%A3o-da-meiuca-cc0d67aa8d1b)
 - Decidir qual tecnologia utilizar
 - Criar a base do projeto e o primeiro componente
-- Analisar como será a organização de pastas. Neste caso separei
+- Analisar como será a organização de pastas.
 - Entender como fazer a leitura dos tokens.
 - Leitura documentação Style Dictionary
 - configuração e geração do build das variáveis de scss utilizando a lib do Style Dictionary
