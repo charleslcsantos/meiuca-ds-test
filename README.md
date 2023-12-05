@@ -69,5 +69,6 @@ Alguns pontos que considero importante:
 - Outras ferramentas importantes é utilizar ESLint e Prettier para apoiar no dia a dia da manutenção e criação de novos componentes. Ajudando assim a manter a padronização do código.
 - Para ajudar na consistencia do DS é importante criar testes automatizados dos componentes. Assim é possível garantir que ao adicoinar novos componentes ou corrigir algo o DS não corre risco de quebrar.
 - Incluir o code review no processo de desenvolviemnto do time do DS também é muito importante.
+- Outro detalhe seria consumir os tokens de maneira dinâmica
 
 Esses são alguns pontos que considero importante. O DS assim é um projeto vivo que precisa constantemente adicionar novos componentes ou ajustar os que já existem. Então é importante seguir essas regras para garantir a manutenibilidade e consistencia
