@@ -23,9 +23,9 @@ export default function CardContent({
   return (
     <div className={`card-content`} aria-label={ariaLabel}>
       <Shape>
-        <Heading>{heading}</Heading>
-        <Subtitle>{subtitle}</Subtitle>
-        <Paragraph>{paragraph}</Paragraph>
+        <Heading tabIndex={1}>{heading}</Heading>
+        <Subtitle tabIndex={1}>{subtitle}</Subtitle>
+        <Paragraph tabIndex={1}>{paragraph}</Paragraph>
         <Button>{buttonLabel}</Button>
       </Shape>
     </div>
