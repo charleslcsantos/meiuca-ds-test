@@ -25,10 +25,13 @@
       flex-wrap: wrap;
       justify-content: center;
     }
+
+    .paragraph {
+      min-height: 100px;
+    }
   }
 
   .paragraph {
     margin-bottom: $spacing-size-md;
-    min-height: 100px;
   }
 }
