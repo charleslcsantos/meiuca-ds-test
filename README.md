@@ -26,7 +26,7 @@ npm run dev
 
 Abaixo segue alguns tópicos relacionados ao raciocínio e decisões utilizados durante o processo de desenvolvimento.
 
-# Decisôes:
+# Decisões:
 
 - O ideal é que um DS seja um projeto separado e considerado uma lib de UI/UX. Por exemplo hospedar ele como um pacote no npm e importar ele nos projetos que você ou o time deseja. Neste desafio eu tomei a decisão de fazer a página de News dentro do repositório do DS. Como disse acima o ideal é ser um outro projeto em um outro repositório e assim importar o DS como uma dependencia do projeto.
 - Eu decidi utilizar o react, apesar do meu domínio em angular tambem. Em situações que o DS precisa ser agnóstico a framework é possível cosntruir-lo utilizando o StencilJS (https://stenciljs.com/)
