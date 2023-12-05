@@ -4,13 +4,12 @@ import "./button.scss";
 type Props = {
   children: ReactNode;
   ariaLabel?: string;
-  onClick?: React.MouseEventHandler<HTMLButtonElement>;
 };
 
-export default function Button({ children, onClick }: Props) {
+export default function Button({ children, ariaLabel, ...props }: Props) {
   return (
-    <button className="button" onClick={onClick} tabIndex={1}>
+    <a className="button" aria-label={ariaLabel} {...props} tabIndex={1}>
       {children}
-    </button>
+    </a>
   );
 }

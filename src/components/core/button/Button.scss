@@ -13,6 +13,8 @@
   background-color: $brand-color-primary-3;
   transition: all ease 0.2s;
   cursor: pointer;
+  width: 160px;
+  display: block;
 
   &:hover {
     background-color: $brand-color-primary-5;
