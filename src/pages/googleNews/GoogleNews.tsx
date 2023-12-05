@@ -6,7 +6,6 @@ import "./GoogleNews.scss";
 
 export default function GoogleNews() {
   const { articles, isLoading } = useNews();
-  console.log(articles);
 
   return (
     <>
@@ -20,9 +19,10 @@ export default function GoogleNews() {
           <Subtitle>Buscando artigos..</Subtitle>
         ) : articles.length > 0 ? (
           <div className="gnews__items">
-            {articles.map((article) => {
+            {articles.map((article, index) => {
               return (
                 <CardContent
+                  key={index}
                   ariaLabel={"Ler mais sobre: " + article.title!}
                   heading={article.author}
                   subtitle={new Date(article.publishedAt).toLocaleDateString()}
