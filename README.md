@@ -24,6 +24,22 @@ npm run dev
 
 Este comando iniciará o servidor de desenvolvimento e você poderá acessar o aplicativo em `http://localhost:3000`
 
+## Testes
+
+Execute o comando para rodar os testes unitários:
+
+```
+npm run test
+```
+
+## Storybook
+
+Execute o comando para rodar o Storybook do projeto:
+
+```
+npm run storybook
+```
+
 ---
 
 Abaixo segue alguns tópicos relacionados ao raciocínio e decisões utilizados durante o processo de desenvolvimento.
