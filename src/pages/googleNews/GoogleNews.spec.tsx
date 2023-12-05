@@ -21,7 +21,7 @@ jest.mock("../../shared/hooks/useNews", () => ({
 }));
 
 describe("GoogleNews Component", () => {
-  test("renders component with articles", () => {
+  test("should render component with articles", () => {
     render(<GoogleNews />);
 
     expect(screen.getByText("Google News (Brazil)")).toBeInTheDocument();

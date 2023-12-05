@@ -11,6 +11,7 @@ Certifique-se de ter o Node.js instalado em sua máquina. (versão do node utili
 Abra o terminal e navegue até o diretório do projeto.
 
 Execute o seguinte comando para instalar as dependências:
+
 ```
 npm install
 ```
@@ -21,6 +22,7 @@ Execute o comando para rodar o ambiente de desenvolvimento Vite:
 npm run dev
 ```
 
+Este comando iniciará o servidor de desenvolvimento e você poderá acessar o aplicativo em `http://localhost:3000`
 
 ---
 
@@ -30,7 +32,7 @@ Abaixo segue alguns tópicos relacionados ao raciocínio e decisões utilizados 
 
 - O ideal é que um DS seja um projeto separado e considerado uma lib de UI/UX. Por exemplo hospedar ele como um pacote no npm e importar ele nos projetos que você ou o time deseja. Neste desafio eu tomei a decisão de fazer a página de News dentro do repositório do DS. Como disse acima o ideal é ser um outro projeto em um outro repositório e assim importar o DS como uma dependencia do projeto.
 - Eu decidi utilizar o react, apesar do meu domínio em angular tambem. Em situações que o DS precisa ser agnóstico a framework é possível cosntruir-lo utilizando o StencilJS (https://stenciljs.com/)
-- Utilizei o typescript para melhorar a organização, confiabilidade e manutenção dos projetos em JS. 
+- Utilizei o typescript para melhorar a organização, confiabilidade e manutenção dos projetos em JS.
 - Decidi alterar a variavel de cor que está sendo indicada no figma para ficar visualmente semelhante ao botao também exibido no figma
   (de $brand-color-primary-2 para ...primary-5)
 - Para o Heading e Subtitle levei em consideração que pode existir mais de um tamanho, por conta disso adicionei a prop `size`. Porém como no figma só tem o tamanho small, considerei ele como default e não criei mais nenhuma variação.
@@ -55,7 +57,8 @@ Abaixo segue alguns tópicos relacionados ao raciocínio e decisões utilizados 
 - Desenvolver os componentes
 - Desenvolver página consumindo API do Google e renderizando as notícias utilizando componente `<CardContent>`
 
---- 
+---
+
 # Otimizar manutenção e qualidade
 
 Alguns pontos que considero importante:
