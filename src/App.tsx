@@ -1,10 +1,10 @@
 import "./App.css";
-import CardContent from "./components/card-content/CardContent";
+import GoogleNews from "./pages/googleNews/GoogleNews";
 
 function App() {
   return (
     <>
-      <CardContent></CardContent>
+      <GoogleNews />
     </>
   );
 }
