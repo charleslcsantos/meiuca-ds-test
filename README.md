@@ -47,7 +47,7 @@ Abaixo segue alguns tópicos relacionados ao raciocínio e decisões utilizados 
 # Decisões:
 
 - O ideal é que um DS seja um projeto separado e considerado uma lib de UI/UX. Por exemplo publicar ele como um pacote no npm para que seja possível importar ele nos projetos que você ou o time deseja. Neste desafio eu tomei a decisão de fazer a página de News dentro do repositório do DS. Como disse acima o ideal é ter dois projetos separados, cada um em um repositório e assim importar o DS como uma dependencia do projeto.
-- Eu decidi utilizar o react, apesar de possuir domínio em Angular, decidi usar o react para ajudar a reforçar alguns aprendizados que obtive nesses ultimos meses. Existem algumas situações que o DS precisa ser agnóstico a framework. Isso é possível utilizando o StencilJS (https://stenciljs.com/). Com o StencilJS você desenvolve o DS e consegue exportar como web components e assim utilizar em qualquer um dos frameworks/libs web que você e sua equipe trabalham.
+- Existem algumas situações que o DS precisa ser agnóstico a framework. Isso é possível utilizando o StencilJS (https://stenciljs.com/). Com o StencilJS você desenvolve o DS e consegue exportar como web components e assim utilizar em qualquer um dos frameworks/libs web que você e sua equipe trabalham. Eu decidi utilizar o react, apesar de possuir domínio em Angular, decidi usar o react para ajudar a reforçar alguns aprendizados que obtive nesses ultimos meses.
 - Utilizei o typescript para melhorar a organização, confiabilidade e manutenção dos projetos em JS.
 - Decidi alterar a variavel de cor que está sendo indicada no figma para ficar visualmente semelhante ao botao também exibido no figma
   (de $brand-color-primary-2 para ...primary-5)
